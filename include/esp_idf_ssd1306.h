@@ -100,11 +100,6 @@ typedef struct {
 	bool _flip;
 } SSD1306_t;
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
 void ssd1306_init(SSD1306_t * dev, int width, int height);
 int ssd1306_get_width(SSD1306_t * dev);
 int ssd1306_get_height(SSD1306_t * dev);
@@ -148,10 +143,6 @@ void spi_init(SSD1306_t * dev, int width, int height);
 void spi_display_image(SSD1306_t * dev, int page, int seg, uint8_t * images, int width);
 void spi_contrast(SSD1306_t * dev, int contrast);
 void spi_hardware_scroll(SSD1306_t * dev, ssd1306_scroll_type_t scroll);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* MAIN_SSD1306_H_ */
 
