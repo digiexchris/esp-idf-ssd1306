@@ -5,7 +5,7 @@
 
 #include "esp_log.h"
 
-#include "ssd1306.h"
+#include "esp_idf_ssd1306.h"
 #include "font8x8_basic.h"
 
 #define TAG "SSD1306"
